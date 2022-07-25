@@ -1,26 +1,24 @@
 import { Link } from 'react-router-dom'
-import styles from './NavBar.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const NavBar = ({ user, handleLogout }) => {
   return (
     <>
-      <header className='App-Header'>
-      {user ?
-        <nav className={styles.navbar}>
-          <ul>
-            <li>Welcome, {user.name}</li>
-            <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
-            <li><Link to="/changePassword">Change Password</Link></li>
-          </ul>
-        </nav>
-      :
-        <nav className={styles.navbar}>
-          <ul>
-            <li><Link to="/login">Log In</Link></li>
-            <li><Link to="/signup">Sign Up</Link></li>
-          </ul>
-        </nav>
-      }
+      <header className='App-header'>
+        {user ?
+          <nav className='navbar'>
+            <Link className='navLink' to=""> REST</Link>
+            <Link className='navLink' to=""> Welcome, {user.name}</Link>
+            <Link className='navLink' to="" onClick={handleLogout}>LOG OUT</Link>
+            {/* <Link className='navLink' to="/changePassword">Change Password</Link> */}
+          </nav>
+        :
+          <nav className='navbar'>
+              <Link className='navLink' to="/login">Log In</Link>
+              <Link className='navLink' to="/signup">Sign Up</Link>
+          </nav>
+        }
       </header>
     </>
   )

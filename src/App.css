@@ -1,10 +1,27 @@
 body{
-  background-color: bisque;
+  background-color: #96AFB8;
 }
 
-.App-Header{
-  background-color: black;
-  color: antiquewhite;
+.App-header{
+  background-color: #334A52;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.navLink{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #E6F4F1;
+  text-decoration: none;
+  padding: 0px 50px 0px 20px;
+}
+
+.navbar{
   display: flex;
   flex-direction: row;
 }
