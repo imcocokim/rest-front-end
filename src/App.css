@@ -1,0 +1,10 @@
+body{
+  background-color: bisque;
+}
+
+.App-Header{
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+}
