@@ -1,7 +1,9 @@
-const ProjectCard = () => {
+const ProjectCard = ({projects}) => {
   return ( 
     <div>
-      TEST
+      {projects.map(project => 
+        project.title 
+      )}
     </div>
   );
 }
