@@ -5,7 +5,7 @@ const AddProject = (props) => {
 
   const [formData, setFormData] = useState({
     title: '',
-    days: ''
+    author: props.user
   })
   const [validForm, setValidForm] = useState(false)
   const formElement = useRef()
