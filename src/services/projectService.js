@@ -10,20 +10,20 @@ async function getAllProjects() {
   return await res.json()
 }
 
-// async function create(project){
-//   console.log(project)
-//   const res = await fetch(BASE_URL, {
-//     method: 'POST',
-//     headers: {
-//       'Authorization': `Bearer ${tokenService.getToken()}`,
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(project)
-//   })
-//   return res.json()
-// }
+async function create(project){
+  console.log(project)
+  const res = await fetch(BASE_URL, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${tokenService.getToken()}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(project)
+  })
+  return res.json()
+}
 
 export {
   getAllProjects,
-  // create
+  create
 }

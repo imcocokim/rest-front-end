@@ -22,7 +22,7 @@ const Landing = ({ user }) => {
   }, [])
 
   const handleAddProject = async (newProjectData) => {
-    const newProject = await profileService.create(newProjectData)
+    const newProject = await projectService.create(newProjectData)
     setProjects([...projects, newProject])
   }
 
