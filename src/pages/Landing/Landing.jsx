@@ -18,6 +18,11 @@ const Landing = ({ user }) => {
     }
     fetchAllProjects()
   }, [])
+
+  // const handleAddProject = async (newProjectData) => {
+  //   const newProject = await projectService.create(newProjectData)
+  //   setProjects([...projects, newProject])
+  // }
   
 
   return (
