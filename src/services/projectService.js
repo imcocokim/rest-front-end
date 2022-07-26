@@ -11,6 +11,7 @@ async function getAllProjects() {
 }
 
 async function create(project){
+  console.log(project)
   const res = await fetch(`${BASE_URL}`, {
     method: 'POST',
     headers: {

@@ -27,8 +27,8 @@ const Landing = ({ user }) => {
   return (
     <main>
       <h1 className={styles.landing}>Welcome to REST</h1>
-      <ProjectCard projects={projects}/>
-      <AddProject handleAddProject={handleAddProject}/>
+      <ProjectCard projects={projects} user={user}/>
+      <AddProject handleAddProject={handleAddProject} user={user}/>
       <Project />
 
     </main>

@@ -2,14 +2,14 @@ import styles from './AddProject.module.css'
 import { useState, useRef, useEffect } from 'react';
 
 const AddProject = (props) => {
-
+  // console.log(props.user)
   const [formData, setFormData] = useState({
     title: '',
-    days: ''
+    author: props.user
   })
   const [validForm, setValidForm] = useState(false)
   const formElement = useRef()
-
+  
   const handleChange = evt => {
     setFormData({...formData, [evt.target.name]: evt.target.value})
   }
@@ -40,20 +40,20 @@ const AddProject = (props) => {
             onChange={handleChange}
             />
           <label htmlFor="days-input">Number of Days</label>
-          <select 
+          {/* <select 
             name="days" 
             id="days" 
             value={formData.days}
             onChange={handleChange}
             >
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-            <option value="">6</option>
-            <option value="">7</option>
-          </select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select> */}
           <button type="submit" disabled={!validForm}>Add Project</button>
         </form>
       </div>
