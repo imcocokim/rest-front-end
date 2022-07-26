@@ -9,9 +9,9 @@ async function getAllProfiles() {
   return await res.json()
 }
 
-async function create(project){
+async function create(project, profileId){
   console.log(project)
-  const res = await fetch(BASE_URL, {
+  const res = await fetch(`${BASE_URL}/projects`, {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${tokenService.getToken()}`,
