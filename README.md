@@ -1,68 +1,34 @@
-# Decoupled MERN Stack with JWT Auth Template - Front End
+# RESTing
 
-This is the front end of a decoupled MERN Stack app that includes JWT Authentication.
+## Why RESTing?
+* We created this application for surviving project week! We want students attending General Assembly to learn a lot, but also take care of their mental health. This is especially true during the grueling days building up to project presentations. This application helps insert built in break times and hard stops for the work day.
 
-When combined with the back end found [here](https://github.com/SEI-Remote/decoupled-mern-jwt-auth-template-back-end), you'll have all you need to build a full stack MERN app!
+## Getting Started
+* [Check out the site!]()
+* [Whimsical]()
 
-Use this to go build things! 🚀
+## Contributors
+* [Coco Kim](https://github.com/imcocokim)
+* [Rachel Kinzel](https://github.com/rharen11)
 
-## To Use This Template
+## Tech Used
+<div align ="center">
+<br>
+<a href="#"><img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />  </a>
+<a href ="#"><img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />  </a>
+<a href="#"><img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white" /> </a>
+<a href="#"><img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />  </a>
+<a href="#"><img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" /> </a>
+<a href="#"><img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"> </a>
+<a href="#"><img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"> </a>
+<a href="#"><img src="https://img.shields.io/badge/react-%23323330.svg?style=for-the-badge&logo=react&logoColor=white"> </a>
 
-**Replace `<name-of-your-app-here>` in the commands below with the name of your app!**
+## Special Thanks:
+* Ezra Jeffrey for the background image(Instagram: @ezrajeffrey)
 
-```bash
-git clone https://github.com/SEI-Remote/decoupled-mern-jwt-auth-template-front-end <name-of-your-app-here>-front-end
-cd <name-of-your-app-here>-front-end
-```
-
-Once you are in the project directory:
-
-```bash
-rm -rf .git
-```
-
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
-
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
-
-Re-initialize a git repository:
-
-```bash
-git init
-```
-
-Use the GitHub CLI to create a new public project repository on GitHub and add a remote named origin for this repo:
-
-```bash
-gh repo create <name-of-your-app-here>-front-end --public --source=. --remote=origin
-```
-
-Run `npm i` to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-touch a `.env` file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-REACT_APP_BACK_END_SERVER_URL=http://localhost:3001
-```
-
-> 🚨 DO NOT place secrets in this `.env` file. The contents of this file WILL be exposed to site visitors. We are only using the front-end .env to create variables specific to the environment the application is running in.
-
-Delete this README.md, then make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
+## Ice Box
+* [ ] User should be able to add specific days to their project
+* [ ] User should be able to add items to each day of their project
+* [ ] User should be able to delete items off each day as they are completed
+* [ ] User should see built in break times and alerts to how long they are working each day
+* [ ] User should be a "Total Time Spent" timer on the Project portion of their page

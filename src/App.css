@@ -1,11 +1,12 @@
 body{
-  background-color: #FFA68B;
+  background-image: url(../public/flower.jpg);
+  background-size: 1500px;
   color: #534439;
   font-family: 'Cormorant Garamond', serif;
 }
 
 .App-header{
-  background-color: #534439;
+  background-color: rgba(83, 68, 57, 0.8);
   color: black;
   display: flex;
   flex-direction: row;
