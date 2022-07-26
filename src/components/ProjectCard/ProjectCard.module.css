@@ -3,4 +3,11 @@
   display: flex;
   justify-content: center;
   border: solid thin #534439;
+  margin: 5px 100px 5px 100px;
+}
+
+.projectEntry{
+  border: solid thin #534439;
+  margin: 10px;
+  padding: 5px;
 }

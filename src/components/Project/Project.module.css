@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #FFE9CF;
+  margin: 5px 100px 5px 100px;
   border: solid thin #534439;
 }
 
@@ -14,9 +16,17 @@
 .addItem{
   background-color: #FFE9CF;
   border: solid thin #534439;
+  margin: 5px 0px 5px 0px;
 }
 
 .days{
   background-color: #FFE9CF;
   border: solid thin #534439;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.day{
+  margin: 10px 60px 100px 60px;
 }

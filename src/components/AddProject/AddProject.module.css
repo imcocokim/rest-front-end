@@ -2,8 +2,22 @@
   background-color: #FFE9CF;
   color: black;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: auto;
+  margin: 5px 100px 5px 100px;
   border: solid thin #534439;
+}
+
+.titleAndButton{
+  margin: 10px;
+  padding: 10px;
+}
+
+label{
+  margin: 5px;
+}
+
+button{
+  margin: 5px;
 }

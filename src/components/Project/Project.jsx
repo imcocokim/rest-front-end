@@ -11,7 +11,11 @@ const Project = () => {
           <h4>Add Item</h4>
         </div>
         <div className={styles.days}>
-          <h4>Days</h4>
+          <div className={styles.day}>Day 1</div>
+          <div className={styles.day}>Day 2</div>
+          <div className={styles.day}>Day 3</div>
+          <div className={styles.day}>Day 4</div>
+          <div className={styles.day}>Day 5</div>
         </div>
       </div>
     </>

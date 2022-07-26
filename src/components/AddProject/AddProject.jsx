@@ -26,12 +26,13 @@ const AddProject = (props) => {
   return ( 
     <>
       <div className={styles.addProject}>
-        <h3>Add Project</h3>
+        <h3 className={styles.addProjectTag}>Add Project</h3>
         <form 
           action=""
           ref={formElement}
           onSubmit={handleSubmit}
           >
+          <div className={styles.titleAndButton}>
           <label htmlFor="title-input">Title</label>
           <input 
             name="title"
@@ -55,6 +56,7 @@ const AddProject = (props) => {
             <option value="7">7</option>
           </select> */}
           <button type="submit" disabled={!validForm}>Add Project</button>
+          </div>
         </form>
       </div>
     </>
