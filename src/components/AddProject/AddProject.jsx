@@ -34,6 +34,7 @@ const AddProject = (props) => {
           >
           <label htmlFor="title-input">Title</label>
           <input 
+            name="title"
             type="text"
             value={formData.title}
             onChange={handleChange}
