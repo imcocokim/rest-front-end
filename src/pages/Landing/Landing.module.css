@@ -1,7 +1,10 @@
 .landing {
   display: flex;
+  background-color: rgba(83, 68, 57, 0.8);
+  color: white;
   justify-content: center;
   border: soldi thin #96AFB8;
+  margin: 30px 50px 30px 50px;
 }
 
 
