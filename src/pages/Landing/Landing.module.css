@@ -1,5 +1,7 @@
-.container {
+.landing {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  border: soldi thin #96AFB8;
 }
+
+

@@ -1,0 +1,6 @@
+.projectCard{
+  background-color: #FFE9CF;
+  display: flex;
+  justify-content: center;
+  border: solid thin #534439;
+}

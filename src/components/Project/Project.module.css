@@ -1,0 +1,22 @@
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid thin #534439;
+}
+
+.projectTitle{
+  background-color: #FFE9CF;
+  border: solid thin #534439;
+}
+
+.addItem{
+  background-color: #FFE9CF;
+  border: solid thin #534439;
+}
+
+.days{
+  background-color: #FFE9CF;
+  border: solid thin #534439;
+}

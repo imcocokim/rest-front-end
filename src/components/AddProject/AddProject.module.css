@@ -1,0 +1,9 @@
+.addProject{
+  background-color: #FFE9CF;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border: solid thin #534439;
+}
