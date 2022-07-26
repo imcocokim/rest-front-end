@@ -19,12 +19,6 @@ const Landing = ({ user }) => {
     fetchAllProjects()
   }, [])
 
-  // const handleAddProject = async (newProjectData) => {
-  //   const newProject = await projectService.create(newProjectData)
-  //   setProjects([...projects, newProject])
-  // }
-  
-
   return (
     <main>
       <h1 className={styles.landing}>Welcome to REST</h1>

@@ -1,20 +1,6 @@
 import styles from './AddProject.module.css'
-import { useState } from 'react'
 
 const AddProject = (props) => {
-  // const [formData, setFormData] = useState({
-  //   title: '',
-  //   days: ''
-  // })
-
-  // const handleSubmit = evt => {
-  //   evt.preventDefault()
-  //   props.handleAddProject(formData)
-  //   setFormData({
-  //     title: '',
-  //     days: ''
-  //   })
-  // }
 
   return ( 
     <>
