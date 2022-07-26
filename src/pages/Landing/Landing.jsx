@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import * as projectService from '../../services/projectService'
 
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import AddProject from '../../components/AddProject/AddProject'
+import Project from '../../components/Project/Project'
 
 const Landing = ({ user }) => {
   const [projects, setProjects] = useState([])
@@ -19,9 +21,11 @@ const Landing = ({ user }) => {
   
 
   return (
-    <main className={styles.container}>
-      <h1>Welcome to REST</h1>
+    <main>
+      <h1 className={styles.landing}>Welcome to REST</h1>
       <ProjectCard projects={projects}/>
+      <AddProject />
+      <Project />
 
     </main>
   )

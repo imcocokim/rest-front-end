@@ -1,6 +1,8 @@
+import styles from './ProjectCard.module.css'
+
 const ProjectCard = ({projects}) => {
   return ( 
-    <div>
+    <div className={styles.projectCard}>
       {projects.map(project => 
         project.title 
       )}
