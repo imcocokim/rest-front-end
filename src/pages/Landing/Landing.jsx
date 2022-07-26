@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 
 import * as projectService from '../../services/projectService'
 
+import * as profileService from '../../services/profileService'
+
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import AddProject from '../../components/AddProject/AddProject'
 import Project from '../../components/Project/Project'
@@ -20,15 +22,15 @@ const Landing = ({ user }) => {
   }, [])
 
   const handleAddProject = async (newProjectData) => {
-    const newProject = await projectService.create(newProjectData)
+    const newProject = await profileService.create(newProjectData)
     setProjects([...projects, newProject])
   }
 
   return (
     <main>
       <h1 className={styles.landing}>Welcome to REST</h1>
-      <ProjectCard projects={projects}/>
-      <AddProject handleAddProject={handleAddProject}/>
+      <ProjectCard projects={projects} user={user}/>
+      <AddProject handleAddProject={handleAddProject} user={user}/>
       <Project />
 
     </main>

@@ -9,6 +9,19 @@ async function getAllProfiles() {
   return await res.json()
 }
 
+async function create(project){
+  console.log(project)
+  const res = await fetch(BASE_URL, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${tokenService.getToken()}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(project)
+  })
+  return res.json()
+}
+
 async function addPhoto(photoData, profileId) {
   const res = await fetch(`${BASE_URL}/${profileId}/add-photo`, {
     method: 'PUT',
@@ -20,4 +33,4 @@ async function addPhoto(photoData, profileId) {
   return await res.json()
 }
 
-export { getAllProfiles, addPhoto }
+export { getAllProfiles, addPhoto, create }
