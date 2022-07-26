@@ -1,7 +1,9 @@
 # RESTing
+![main screenshot](./public/main.png)
 
 ## Why RESTing?
 * We created this application for surviving project week! We want students attending General Assembly to learn a lot, but also take care of their mental health. This is especially true during the grueling days building up to project presentations. This application helps insert built in break times and hard stops for the work day.
+* ![projects](./public/project.png)
 
 ## Getting Started
 * [Check out the site!]()
