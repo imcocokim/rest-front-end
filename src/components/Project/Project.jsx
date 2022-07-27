@@ -8,11 +8,21 @@ const Project = (props) => {
     day: '',
     author: props.user
   })
+
+  // const projects = [...new Set(props.projects.map(
+  //   (project) => project.current
+  // ))]
+
   return ( 
     <>
       <div className={styles.project}>
         <div className={styles.projectTitle}>
-          <h3>Project Title</h3>
+        {/* <select onChange={(e) => props.setProjectCurrent(e.target.value)}>
+          {projects.map((project, idx) => (
+          <option key={idx} value={project}></option>
+          ))}
+        </select> */}
+        <h2>Portfolio</h2>
         </div>
         <div className={styles.addItem}>
           <div className={styles.addItemTag}>
