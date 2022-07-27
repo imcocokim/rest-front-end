@@ -1,5 +1,7 @@
 import styles from './Project.module.css'
 import { useState, useRef, useEffect } from 'react';
+import * as taskService from '../../services/taskService'
+
 
 const Project = (props) => {
   const [formData, setFormData] = useState({
@@ -10,9 +12,9 @@ const Project = (props) => {
   })
   const [tasks, setTasks] = useState([])
 
-  // const projects = [...new Set(props.projects.map(
-  //   (project) => project.current
-  // ))]
+  const handleChange = evt => {
+    setFormData({...formData, [evt.target.name]: evt.target.value})
+  }
 
   const handleSubmit = evt => {
     evt.preventDefault()
@@ -21,11 +23,11 @@ const Project = (props) => {
       task: '',
       minutes: '',
       day: '',
-      author: props.author
+      author: props.user
     })
   }
 
-  handleAddTask = async (newTaskData) => {
+  const handleAddTask = async (newTaskData) => {
     const newTask = await taskService.create(newTaskData)
     setTasks([...tasks, newTask])
   }
@@ -34,22 +36,18 @@ const Project = (props) => {
     <>
       <div className={styles.project}>
         <div className={styles.projectTitle}>
-        {/* <select onChange={(e) => props.setProjectCurrent(e.target.value)}>
-          {projects.map((project, idx) => (
-          <option key={idx} value={project}></option>
-          ))}
-        </select> */}
         <h2>Portfolio</h2>
         </div>
         <div className={styles.addItem}>
           <div className={styles.addItemTag}>
           <h4>Add Task</h4>
           </div>
-          <form action="">
+          <form action=""
+          onSubmit={handleSubmit}>
             <label htmlFor="">Task:</label>
-            <input type="text" />
+            <input type="text" name='task' value={formData.task} onChange={handleChange}/>
             <label htmlFor="">Minutes:</label>
-            <select name="" id="">
+            <select name="minutes" id="" value={formData.minutes}>
               <option value="10">10</option>
               <option value="20">20</option>
               <option value="30">30</option>
@@ -58,7 +56,7 @@ const Project = (props) => {
               <option value="60">60</option>
             </select>
             <label htmlFor="">Day:</label>
-            <select name="" id="">
+            <select name="day" id="" value={formData.day} onChange={handleChange}>
               <option value="Day 1">Day 1</option>
               <option value="Day 2">Day 2</option>
               <option value="Day 3">Day 3</option>
