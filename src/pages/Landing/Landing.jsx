@@ -24,13 +24,18 @@ const Landing = ({ user }) => {
     setProjects([...projects, newProject])
   }
 
+const handleDeleteProject = async (id) => {
+  const deletedProject = await projectService.deleteProject(id)
+  setProjects(projects.filter(project => project._id !== deletedProject._id))
+}
+
   return (
     <main>
       <h1 className={styles.landing}>Welcome to RESTing</h1>
       <div className={styles.projectCard}>
         {projects.map(project =>
           <div className={styles.projectEntry}>
-            <ProjectCard project={project} user={user}/>
+            <ProjectCard project={project} user={user} handleDeleteProject={handleDeleteProject}/>
           </div>
         )}
       </div>
