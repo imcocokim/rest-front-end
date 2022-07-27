@@ -22,8 +22,22 @@ async function create(project){
   })
   return res.json()
 }
+async function deleteProject(projectId){
+  const res = await fetch(`${BASE_URL}/${projectId}`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${tokenService.getToken()}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify()
+  })
+  return res.json()
+}
+
+
 
 export {
   getAllProjects,
-  create
+  create,
+  deleteProject
 }
