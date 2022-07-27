@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react'
 
 import * as projectService from '../../services/projectService'
 
-import * as profileService from '../../services/profileService'
-
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import AddProject from '../../components/AddProject/AddProject'
 import Project from '../../components/Project/Project'
@@ -29,7 +27,13 @@ const Landing = ({ user }) => {
   return (
     <main>
       <h1 className={styles.landing}>Welcome to RESTing</h1>
-      <ProjectCard projects={projects} user={user}/>
+      <div className={styles.projectCard}>
+        {projects.map(project =>
+          <div className={styles.projectEntry}>
+            <ProjectCard project={project} user={user}/>
+          </div>
+        )}
+      </div>
       <AddProject handleAddProject={handleAddProject} user={user}/>
       <Project user={user} projects={projects}/>
 
