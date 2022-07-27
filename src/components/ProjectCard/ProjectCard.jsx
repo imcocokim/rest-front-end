@@ -1,13 +1,11 @@
 import styles from './ProjectCard.module.css'
 
-const ProjectCard = ({projects, user}) => {
-  console.log(projects)
+const ProjectCard = ({project}) => {
   return ( 
 
-    <div className={styles.projectCard}>
-      {projects.map(project => 
-        <div className={styles.projectEntry}>{project.title}</div> 
-      )}
+    <div >
+      {project.title}
+      <button className={styles.button}>x</button>
     </div>
   );
 }
