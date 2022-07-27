@@ -12,8 +12,10 @@ const Project = () => {
           <h4>Add Item</h4>
           </div>
           <form action="">
+            <div>
             <label htmlFor="">Item</label>
             <input type="text" />
+            </div>
             <label htmlFor="">Time</label>
             <select name="" id="">
               <option value="0900">0900</option>
@@ -26,6 +28,7 @@ const Project = () => {
               <option value="1600">1600</option>
               <option value="1700">1700</option>
             </select>
+            <button>Add Item</button>
           </form>
         </div>
         <div className={styles.days}>
