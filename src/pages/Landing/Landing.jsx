@@ -31,7 +31,7 @@ const Landing = ({ user }) => {
       <h1 className={styles.landing}>Welcome to RESTing</h1>
       <ProjectCard projects={projects} user={user}/>
       <AddProject handleAddProject={handleAddProject} user={user}/>
-      <Project />
+      <Project user={user}/>
 
     </main>
   )
