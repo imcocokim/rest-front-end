@@ -6,7 +6,8 @@
 * ![projects](./public/project.png)
 
 ## Getting Started
-* [Check out the site!]()
+* [Check out the site!- TBA]()
+* [Back End Github](https://github.com/imcocokim/rest-back-end)
 * [Whimsical](https://whimsical.com/rest-RyZUz3aycACAWjJ9LvyLzj)
 
 ## Contributors
