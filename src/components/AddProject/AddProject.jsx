@@ -21,6 +21,10 @@ const AddProject = (props) => {
   const handleSubmit= evt => {
     evt.preventDefault()
     props.handleAddProject(formData)
+    setFormData({
+      title:'',
+      author: props.user
+    })
   }
 
   return ( 

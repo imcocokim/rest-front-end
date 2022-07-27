@@ -35,7 +35,7 @@ const Landing = ({ user }) => {
         )}
       </div>
       <AddProject handleAddProject={handleAddProject} user={user}/>
-      <Project user={user}/>
+      <Project user={user} projects={projects}/>
 
     </main>
   )
