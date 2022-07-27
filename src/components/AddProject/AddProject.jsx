@@ -22,9 +22,7 @@ const AddProject = (props) => {
     evt.preventDefault()
     props.handleAddProject(formData)
     setFormData({
-      task: '',
-      minutes: '',
-      day: '',
+      title:'',
       author: props.user
     })
   }
