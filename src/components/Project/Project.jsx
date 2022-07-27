@@ -1,5 +1,6 @@
 import styles from './Project.module.css'
 import { useState, useRef, useEffect } from 'react';
+import Break from '../Break/Break';
 
 const Project = (props) => {
   const [formData, setFormData] = useState({
