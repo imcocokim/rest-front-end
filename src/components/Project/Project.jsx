@@ -3,8 +3,9 @@ import { useState, useRef, useEffect } from 'react';
 
 const Project = (props) => {
   const [formData, setFormData] = useState({
-    title: '',
+    task: '',
     minutes: '',
+    day: '',
     author: props.user
   })
   return ( 

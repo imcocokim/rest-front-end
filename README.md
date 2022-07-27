@@ -2,12 +2,12 @@
 ![main screenshot](./public/main.png)
 
 ## Why RESTing?
-* We created this application for surviving project week! We want students attending General Assembly to learn a lot, but also take care of their mental health. This is especially true during the grueling days building up to project presentations. This application helps insert built in break times and hard stops for the work day.
+* We created this application for surviving project week! We want students attending General Assembly to learn, but also take care of their mental health. This is especially true during the grueling days building up to project presentations. This application helps insert built in break times and hard stops for the work day.
 * ![projects](./public/project.png)
 
 ## Getting Started
 * [Check out the site!]()
-* [Whimsical]()
+* [Whimsical](https://whimsical.com/rest-RyZUz3aycACAWjJ9LvyLzj)
 
 ## Contributors
 * [Coco Kim](https://github.com/imcocokim)
