@@ -35,4 +35,5 @@ body{
   background-color: #FFF6EC;
   color: #534439;
   border-radius: 80px;
+  width: fit-content;
 }
