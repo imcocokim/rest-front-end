@@ -4,7 +4,7 @@ const Break = () => {
   return ( 
     <div className={styles.break}>
       <h4>BREAK</h4>
-      <p>10-15 minutes</p>
+      <p>15 minutes</p>
     </div>
   );
 }

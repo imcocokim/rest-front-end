@@ -1,8 +1,8 @@
 .task{
-  align-items: center;
   background-color: none;
   border: dotted thin #534439;
   padding: 10px;
+  text-align: center;
 }
 
 .task{

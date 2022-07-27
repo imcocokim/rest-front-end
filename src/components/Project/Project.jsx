@@ -1,6 +1,8 @@
 import styles from './Project.module.css'
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import * as taskService from '../../services/taskService'
+import TaskContainer from '../TaskContainer/TaskContainer'
+import BreakContainer from '../BreakContainer/BreakContainer'
 
 
 const Project = (props) => {
@@ -68,7 +70,7 @@ const Project = (props) => {
           </form>
         </div>
         <div className={styles.days}>
-          <div className={styles.day}>Day 1</div>
+          <div className={styles.day}>Day 1<TaskContainer /><BreakContainer /></div>
           <div className={styles.day}>Day 2</div>
           <div className={styles.day}>Day 3</div>
           <div className={styles.day}>Day 4</div>
