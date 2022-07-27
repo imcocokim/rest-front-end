@@ -1,6 +1,12 @@
 import styles from './Project.module.css'
+import { useState, useRef, useEffect } from 'react';
 
-const Project = () => {
+const Project = (props) => {
+  const [formData, setFormData] = useState({
+    title: '',
+    minutes: '',
+    author: props.user
+  })
   return ( 
     <>
       <div className={styles.project}>
@@ -9,26 +15,30 @@ const Project = () => {
         </div>
         <div className={styles.addItem}>
           <div className={styles.addItemTag}>
-          <h4>Add Item</h4>
+          <h4>Add Task</h4>
           </div>
           <form action="">
-            <div>
-            <label htmlFor="">Item</label>
+            <label htmlFor="">Task:</label>
             <input type="text" />
-            </div>
-            <label htmlFor="">Time</label>
+            <label htmlFor="">Minutes:</label>
             <select name="" id="">
-              <option value="0900">0900</option>
-              <option value="1000">1000</option>
-              <option value="1100">1100</option>
-              <option value="1200">1200</option>
-              <option value="1300">1300</option>
-              <option value="1400">1400</option>
-              <option value="1500">1500</option>
-              <option value="1600">1600</option>
-              <option value="1700">1700</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
             </select>
-            <button>Add Item</button>
+            <label htmlFor="">Day:</label>
+            <select name="" id="">
+              <option value="Day 1">Day 1</option>
+              <option value="Day 2">Day 2</option>
+              <option value="Day 3">Day 3</option>
+              <option value="Day 4">Day 4</option>
+              <option value="Day 5">Day 5</option>
+              <option value="Day 6">Day 6</option>
+            </select>
+            <button>Add Task</button>
           </form>
         </div>
         <div className={styles.days}>
@@ -38,6 +48,7 @@ const Project = () => {
           <div className={styles.day}>Day 4</div>
           <div className={styles.day}>Day 5</div>
         </div>
+        
       </div>
     </>
    );
