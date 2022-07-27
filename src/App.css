@@ -1,6 +1,7 @@
 body{
   background-image: url(../public/flower.jpg);
-  background-size: 1500px;
+  background-size: cover;
+  background-attachment: fixed;
   color: #534439;
   font-family: 'Cormorant Garamond', serif;
 }
