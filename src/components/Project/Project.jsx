@@ -8,10 +8,27 @@ const Project = (props) => {
     day: '',
     author: props.user
   })
+  const [tasks, setTasks] = useState([])
 
   // const projects = [...new Set(props.projects.map(
   //   (project) => project.current
   // ))]
+
+  const handleSubmit = evt => {
+    evt.preventDefault()
+    handleAddTask(formData)
+    setFormData({
+      task: '',
+      minutes: '',
+      day: '',
+      author: props.author
+    })
+  }
+
+  handleAddTask = async (newTaskData) => {
+    const newTask = await taskService.create(newTaskData)
+    setTasks([...tasks, newTask])
+  }
 
   return ( 
     <>

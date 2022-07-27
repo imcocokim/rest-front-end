@@ -6,7 +6,7 @@ const NavBar = ({ user, handleLogout }) => {
       <header className='App-header'>
         {user ?
           <nav className='navbar'>
-            <Link className='navLink' to=""> REST</Link>
+            <Link className='navLink' to=""> RESTing</Link>
             <Link className='navLink' to=""> Welcome, {user.name}</Link>
             <Link className='navLink' to="" onClick={handleLogout}>LOG OUT</Link>
             {/* <Link className='navLink' to="/changePassword">Change Password</Link> */}
