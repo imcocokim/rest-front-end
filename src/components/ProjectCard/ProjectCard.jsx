@@ -1,11 +1,11 @@
 import styles from './ProjectCard.module.css'
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, handleDeleteProject}) => {
   return ( 
 
-    <div >
+    <div key={project._id}>
       {project.title}
-      <button className={styles.button}>x</button>
+      <button className={styles.button} onClick={() => handleDeleteProject(project._id)}>x</button>
     </div>
   );
 }
